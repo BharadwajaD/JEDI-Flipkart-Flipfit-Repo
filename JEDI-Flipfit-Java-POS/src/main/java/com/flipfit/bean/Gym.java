@@ -1,28 +1,26 @@
 package com.flipfit.bean;
 
-public class gym {
-    public int getGym_id() {
-        return gym_id;
+public class Gym {
+    public int getGymId() {
+        return gymId;
     }
 
-    public void setGym_id(int gym_id) {
-        this.gym_id = gym_id;
+    public void setGymId(int gymId) {
+        this.gymId = gymId;
     }
 
-    private int gym_id;
+    private int gymId;
 
 
-
-    public String getGym_name() {
-        return gym_name;
+    public String getGymName() {
+        return gymName;
     }
 
-    public void setGym_name(String gym_name) {
-        this.gym_name = gym_name;
+    public void setGymName(String gymName) {
+        this.gymName = gymName;
     }
 
-    private String gym_name;
-
+    private String gymName;
 
 
     public int getCapacity() {
@@ -36,16 +34,25 @@ public class gym {
     private int capacity;
 
 
-
-    public int getUser_id() {
-        return user_id;
+    public boolean isListed() {
+        return listed;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setListed(boolean listed) {
+        this.listed = listed;
     }
 
-    private int user_id;//FOREIGN KEY
+    private boolean listed;
 
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    private int userId;//FOREIGN KEY
 
 }
