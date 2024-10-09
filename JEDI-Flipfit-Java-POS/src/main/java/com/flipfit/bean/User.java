@@ -1,37 +1,58 @@
 package com.flipfit.bean;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
-    private String username;
-    private String password;
-    private String name;
+
+    @JsonProperty
+    private long userId;
+
+    @JsonProperty
+    private String userName;
+
+    @JsonProperty
+    private String hashPassword;
+
+    @JsonProperty
     private String role;
 
+    public User(int userId, String userName, String role) {
 
-    public String getUsername() {
-        return username;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
+        this.userId = userId;
+        this.userName = userName;
+        this.role = role;
     }
 
-    public String getName() { return name; }
-    public void setName(String name) {
-        name = name;
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getHashPassword() {
+        return hashPassword;
+    }
+
+    public void setHashPassword(String hashPassword) {
+        this.hashPassword = hashPassword;
     }
 
     public String getRole() {
         return role;
     }
+
     public void setRole(String role) {
-        role = role;
+        this.role = role;
     }
 };
