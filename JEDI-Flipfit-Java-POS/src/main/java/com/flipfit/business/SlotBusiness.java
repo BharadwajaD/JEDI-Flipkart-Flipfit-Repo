@@ -1,6 +1,7 @@
 package com.flipfit.business;
 
 import com.flipfit.bean.Slot;
+import com.flipfit.business.Interface.SlotInterface;
 
 public class SlotBusiness implements SlotInterface {
 
