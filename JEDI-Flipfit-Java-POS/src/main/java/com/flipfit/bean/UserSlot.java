@@ -8,7 +8,6 @@ public class UserSlot {
     public int getUserId() {
         return userId;
     }
-
     public void setUserId(int userId) {
         this.userId = userId;
     }
@@ -16,7 +15,6 @@ public class UserSlot {
     public int getSlotId() {
         return slotId;
     }
-
     public void setSlotId(int slotId) {
         this.slotId = slotId;
     }
@@ -24,7 +22,6 @@ public class UserSlot {
     public int getGymId() {
         return gymId;
     }
-
     public void setGymId(int gymId) {
         this.gymId = gymId;
     }
